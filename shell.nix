@@ -2,7 +2,9 @@
 
 let
   inherit (default) project pkgs;
-  inherit (pkgs) cabal-install;
+
+  pkgs-unstable = import sources."nixpkgs" {};
+  inherit (pkgs-unstable) cabal-install;
 
   local =
     if builtins.pathExists ./shell.local.nix
