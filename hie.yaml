@@ -1,5 +1,5 @@
 cradle:
   cabal:
-    - { path: "./eventlog2speedscope", component: "eventlog2speedscope" }
+    - { path: "./eventlog-prof", component: "eventlog-prof" }
     - { path: "./pipes-ghc-events", component: "pipes-ghc-events" }
     - { path: "./pipes-simple-sqlite", component: "pipes-simple-sqlite" }
