@@ -18,7 +18,7 @@ let
   pkgs = nixpkgs;
   project =
     pkgs.haskell-nix.cabalProject {
-      src = pkgs.haskell-nix.haskellLib.cleanGit { name = "pipes-ghc-events"; src = ./.; };
+      src = pkgs.haskell-nix.haskellLib.cleanGit { name = "eventlog-prof"; src = ./.; };
       compiler-nix-name = "ghc8101";
     };
   shell = import ./shell.nix { inherit default; };
